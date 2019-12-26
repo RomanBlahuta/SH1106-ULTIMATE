@@ -5,6 +5,10 @@ The current version of the library supports only displays with __128x64__ resolu
 
 The communication between the display and __STM32F411E-DISCOVERY__ is implemented through the __I2C__ bus (__I2C3__ on the __STM__ kit by default).
 
+### \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+### __UNDER DEVELOPMENT__
+### \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+
 ---
 ---
 
@@ -24,9 +28,8 @@ __HARDWARE.pdf__ | Description of the hardware devices for this library
 lib/ | Contents
 ------ | ------
 sh1106Ultimate.c | Function implementations, structures etc.
-sh1106Ultimate.h | Constants for OLED initialization, function declarations etc.
-fonts.c | Bitmaps for fonts of different sizes
-fonts.h | Font structure definition etc.
+sh1106Ultimate.h | Constants for OLED initialization, function declarations, structure definitions etc.
+fonts.h | Bitmaps for fonts of different sizes
 
 ---
 ---
@@ -40,11 +43,18 @@ fonts.h | Font structure definition etc.
 
 ## Issues and future plans
 
+* ### Current Library is still being developed. There are possibly many bugs!!!!!!!
 * ### Add functions for drawing geometric figures on the display;
 * ### Add support for SSD1306;
+* ### Currently there is only 5x7 font available;
 * ### Add support for displays with different resolution;
 * ### Add ability to configure the size of display;
 * ### Library optimization;
+
+## Bugs
+* ### __shu_DrawChar__ works only with 5x7 font. Cause: magic number in implementation. Usage of variables creates distortion on the display.
+* ### Writing on same coordinates overrides characters.
+* ### Structure attributes behaved unpredictably when there was an attempt to perform a check if display.isInitialized == 1;
 
 ---
 ---
