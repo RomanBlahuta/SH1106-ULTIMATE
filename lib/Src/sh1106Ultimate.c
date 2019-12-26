@@ -254,6 +254,78 @@ void shu_DrawBitmap(uint16_t* bitmap) {
 
 }
 
+/**********************************************************************************************************************/
+
+uint16_t shu_GetX() {
+    return display.Current_X;
+}
+
+/**********************************************************************************************************************/
+
+uint16_t shu_GetY() {
+    return display.Current_Y;
+}
+
+/**********************************************************************************************************************/
+
+/** Functions for demonstration **/
+
+void DrawHeartL(void) {
+    uint16_t x = 0;
+    uint8_t HeartBitmapLeft[] = {0xf0, 0xc, 0x2, 0x1, 0x1, 0x2, 0xc, 0x10, 0x1, 0x6, 0x8, 0x10, 0x20, 0x40, 0x80, 0x00};
+    display.Char_Buffer[0] = 0x40;
+    for (x = 0; x < 8; x++) {
+        display.Char_Buffer[x + 1] = HeartBitmapLeft[x];
+    }
+    HAL_I2C_Master_Transmit(&hi2c3, OLED_ADDR, display.Char_Buffer, 9, 1000);
+    shu_GotoXY(display.Current_X, display.Current_Y + 1);
+
+    for (x = 0; x < 8; x++) {
+        display.Char_Buffer[x + 1] = HeartBitmapLeft[x + 8];
+    }
+    HeartBitmapLeft[12] = 0x00;
+    HAL_I2C_Master_Transmit(&hi2c3, OLED_ADDR, display.Char_Buffer, 13, 1000);
+    display.Current_X += 8;
+}
+
+
+
+void DrawHeartR(void) {
+    uint16_t x = 0;
+    uint8_t HeartBitmapRight[] = {0xc, 0x2, 0x1, 0x1, 0x2, 0xc, 0xf0, 0x00, 0x80, 0x40, 0x20, 0x10, 0x4, 0x6, 0x1,
+                                  0x00};
+    display.Char_Buffer[0] = 0x40;
+
+    shu_GotoXY(display.Current_X, display.Current_Y);
+    for (x = 0; x < 11; x++) {
+        display.Char_Buffer[x + 1] = HeartBitmapRight[x];
+    }
+    HeartBitmapRight[12] = 0x00;
+    HAL_I2C_Master_Transmit(&hi2c3, OLED_ADDR, display.Char_Buffer, 9, 1000);
+
+    shu_GotoXY(display.Current_X, display.Current_Y + 1);
+    for (x = 0; x < 8; x++) {
+        display.Char_Buffer[x + 1] = HeartBitmapRight[x + 8];
+    }
+    HeartBitmapRight[12] = 0x00;
+    HAL_I2C_Master_Transmit(&hi2c3, OLED_ADDR, display.Char_Buffer, 13, 1000);
+    display.Current_X += 8;
+    if (display.Current_X > WIDTH) {
+        display.Current_X = DEFAULT_SPACE;
+    }
+}
+
+
+
+void shu_DrawHeart(void) {
+    uint16_t x = display.Current_X;
+    uint16_t y = display.Current_Y;
+    DrawHeartL();
+    shu_GotoXY(x+8, y);
+    DrawHeartR();
+    shu_GotoXY(x+16, y+1);
+    shu_DrawChar(' ');
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///                                                                                                                  ///

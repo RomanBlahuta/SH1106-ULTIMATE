@@ -30,7 +30,6 @@
 
 //I2C_HandleTypeDef hi2c3;
 
-uint16_t gg;
 
 /* USER CODE END PV */
 
@@ -38,7 +37,96 @@ uint16_t gg;
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 
+void DEMO() {
+    int choices[] = {0, 1, 2, 3};
+    int choice = 0;
 
+    shu_InitDisplay();
+    shu_ChooseFont(Font_5x7);
+
+    for (int i = 0; i < 4; i++) {
+        choice = choices[i];
+
+        if (choice == 0) {
+            shu_GotoXY(0, 1);
+            shu_DrawString("SH1106-ULTIMATE");
+            shu_GotoXY(0, 2);
+            shu_DrawString("Hello World!");
+            shu_GotoXY(0, 4);
+            shu_DrawString("MADE FOR UC");
+            shu_DrawChar('U');
+            HAL_Delay(8000);
+        }
+        else if (choice == 1) {
+
+            shu_GotoXY(24,3);
+            shu_DrawChar('I');
+            shu_DrawChar(' ');
+            //shu_DrawChar(' ');
+
+            shu_GotoXY(shu_GetX(),2);
+            shu_DrawHeart();
+
+            uint16_t someX = shu_GetX();
+            shu_GotoXY(someX, 3);
+            shu_DrawString("|| O K");
+
+            shu_GotoXY(someX+3, 2);
+            shu_DrawString("_");
+
+            shu_GotoXY(50, 6);
+            shu_DrawString(":=)");
+            HAL_Delay(8000);
+        }
+        else if (choice == 3) {
+
+            shu_GotoXY(0, 2);
+            shu_DrawString("=====================");
+
+            shu_GotoXY(35, 3);
+            shu_DrawString("Thank you");
+
+            shu_GotoXY(24, 4);
+            shu_DrawString("for attention!");
+
+            shu_GotoXY(0, 5);
+            shu_DrawString("=====================");
+            HAL_Delay(8000);
+        }
+        else if (choice == 2) {
+            uint16_t prevX = 0;
+            uint16_t prevY = 4;
+            int ticks = 0;
+            while (ticks < 15) {
+
+                shu_GotoXY(30, 1);
+                shu_DrawString("ANIMATION!");
+
+                shu_GotoXY(prevX, prevY);
+                shu_DrawString("-->");
+                prevX = shu_GetX();
+                prevY = shu_GetY();
+
+                HAL_Delay(5);
+
+                shu_ClearDisplay();
+
+                shu_GotoXY(30, 1);
+                shu_DrawString("ANIMATION!");
+
+                HAL_Delay(1);
+                ticks++;
+            }
+            shu_ClearDisplay();
+            shu_GotoXY(40, 4);
+            shu_DrawString("THE END");
+            HAL_Delay(3000);
+        }
+        shu_ClearDisplay();
+    }
+
+
+}
 
 /* USER CODE END PFP */
 
@@ -79,17 +167,7 @@ int main(void)
     MX_I2C3_Init();
     MX_SPI1_Init();
     /* USER CODE BEGIN 2 */
-
-    shu_InitDisplay();
-    shu_ChooseFont(Font_5x7);
-    shu_GotoXY(0,1);
-    shu_DrawString("SH1106-ULTIMATE");
-    shu_GotoXY(0,2);
-    shu_DrawString("Hello World!");
-    shu_GotoXY(0,4);
-    shu_DrawString("MADE FOR UC");
-    shu_DrawChar('U');
-
+    DEMO();
     /* USER CODE END 2 */
 
     /* Infinite loop */

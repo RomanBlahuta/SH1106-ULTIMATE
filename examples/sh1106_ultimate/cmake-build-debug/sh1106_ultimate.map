@@ -821,7 +821,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
- .bss.gg        0x0000000000000000        0x2 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
@@ -1091,7 +1090,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtn.o
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000198                . = ALIGN (0x4)
 
-.text           0x0000000008000198     0x2544
+.text           0x0000000008000198     0x2948
                 0x0000000008000198                . = ALIGN (0x4)
  *(.text)
  .text          0x0000000008000198       0x88 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
@@ -1193,211 +1192,230 @@ LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtn.o
  .text.HAL_I2C_MspInit
                 0x0000000008001fe8       0xd4 CMakeFiles/sh1106_ultimate.elf.dir/Src/i2c.c.obj
                 0x0000000008001fe8                HAL_I2C_MspInit
- .text.main     0x00000000080020bc       0x60 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
-                0x00000000080020bc                main
+ .text.DEMO     0x00000000080020bc      0x204 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+                0x00000000080020bc                DEMO
+ .text.main     0x00000000080022c0       0x1e CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+                0x00000000080022c0                main
+ *fill*         0x00000000080022de        0x2 
  .text.SystemClock_Config
-                0x000000000800211c       0xd0 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
-                0x000000000800211c                SystemClock_Config
+                0x00000000080022e0       0xd0 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+                0x00000000080022e0                SystemClock_Config
  .text.Error_Handler
-                0x00000000080021ec        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
-                0x00000000080021ec                Error_Handler
+                0x00000000080023b0        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+                0x00000000080023b0                Error_Handler
  .text.shu_WriteCommand
-                0x00000000080021f8       0x3c CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
-                0x00000000080021f8                shu_WriteCommand
+                0x00000000080023bc       0x3c CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x00000000080023bc                shu_WriteCommand
  .text.shu_GotoXY
-                0x0000000008002234       0x5c CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
-                0x0000000008002234                shu_GotoXY
+                0x00000000080023f8       0x5c CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x00000000080023f8                shu_GotoXY
  .text.shu_ClearDisplay
-                0x0000000008002290       0x68 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
-                0x0000000008002290                shu_ClearDisplay
+                0x0000000008002454       0x68 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x0000000008002454                shu_ClearDisplay
  .text.shu_DrawChar
-                0x00000000080022f8       0xa8 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
-                0x00000000080022f8                shu_DrawChar
+                0x00000000080024bc       0xa8 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x00000000080024bc                shu_DrawChar
  .text.shu_DrawString
-                0x00000000080023a0       0x2a CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
-                0x00000000080023a0                shu_DrawString
- *fill*         0x00000000080023ca        0x2 
+                0x0000000008002564       0x2a CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x0000000008002564                shu_DrawString
+ *fill*         0x000000000800258e        0x2 
  .text.shu_InitDisplay
-                0x00000000080023cc       0xb4 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
-                0x00000000080023cc                shu_InitDisplay
+                0x0000000008002590       0xb4 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x0000000008002590                shu_InitDisplay
  .text.shu_ChooseFont
-                0x0000000008002480       0x3c CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
-                0x0000000008002480                shu_ChooseFont
+                0x0000000008002644       0x3c CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x0000000008002644                shu_ChooseFont
+ .text.shu_GetX
+                0x0000000008002680       0x14 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x0000000008002680                shu_GetX
+ .text.shu_GetY
+                0x0000000008002694       0x14 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x0000000008002694                shu_GetY
+ .text.DrawHeartL
+                0x00000000080026a8       0xd4 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x00000000080026a8                DrawHeartL
+ .text.DrawHeartR
+                0x000000000800277c       0xf4 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x000000000800277c                DrawHeartR
+ .text.shu_DrawHeart
+                0x0000000008002870       0x50 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x0000000008002870                shu_DrawHeart
  .text.MX_SPI1_Init
-                0x00000000080024bc       0x6c CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
-                0x00000000080024bc                MX_SPI1_Init
+                0x00000000080028c0       0x6c CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
+                0x00000000080028c0                MX_SPI1_Init
  .text.HAL_SPI_MspInit
-                0x0000000008002528       0x90 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
-                0x0000000008002528                HAL_SPI_MspInit
+                0x000000000800292c       0x90 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
+                0x000000000800292c                HAL_SPI_MspInit
  .text.HAL_MspInit
-                0x00000000080025b8       0x4c CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
-                0x00000000080025b8                HAL_MspInit
+                0x00000000080029bc       0x4c CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+                0x00000000080029bc                HAL_MspInit
  .text.NMI_Handler
-                0x0000000008002604        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
-                0x0000000008002604                NMI_Handler
+                0x0000000008002a08        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+                0x0000000008002a08                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008002610        0x6 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
-                0x0000000008002610                HardFault_Handler
+                0x0000000008002a14        0x6 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+                0x0000000008002a14                HardFault_Handler
  .text.MemManage_Handler
-                0x0000000008002616        0x6 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
-                0x0000000008002616                MemManage_Handler
+                0x0000000008002a1a        0x6 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+                0x0000000008002a1a                MemManage_Handler
  .text.BusFault_Handler
-                0x000000000800261c        0x6 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
-                0x000000000800261c                BusFault_Handler
+                0x0000000008002a20        0x6 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+                0x0000000008002a20                BusFault_Handler
  .text.UsageFault_Handler
-                0x0000000008002622        0x6 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
-                0x0000000008002622                UsageFault_Handler
+                0x0000000008002a26        0x6 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+                0x0000000008002a26                UsageFault_Handler
  .text.SVC_Handler
-                0x0000000008002628        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
-                0x0000000008002628                SVC_Handler
+                0x0000000008002a2c        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+                0x0000000008002a2c                SVC_Handler
  .text.DebugMon_Handler
-                0x0000000008002634        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
-                0x0000000008002634                DebugMon_Handler
+                0x0000000008002a38        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+                0x0000000008002a38                DebugMon_Handler
  .text.PendSV_Handler
-                0x0000000008002640        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
-                0x0000000008002640                PendSV_Handler
+                0x0000000008002a44        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+                0x0000000008002a44                PendSV_Handler
  .text.SysTick_Handler
-                0x000000000800264c        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
-                0x000000000800264c                SysTick_Handler
+                0x0000000008002a50        0xc CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+                0x0000000008002a50                SysTick_Handler
  .text.SystemInit
-                0x0000000008002658       0x18 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
-                0x0000000008002658                SystemInit
+                0x0000000008002a5c       0x18 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
+                0x0000000008002a5c                SystemInit
  .text.Reset_Handler
-                0x0000000008002670       0x50 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
-                0x0000000008002670                Reset_Handler
+                0x0000000008002a74       0x50 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
+                0x0000000008002a74                Reset_Handler
  .text.Default_Handler
-                0x00000000080026c0        0x2 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
-                0x00000000080026c0                RTC_Alarm_IRQHandler
-                0x00000000080026c0                EXTI2_IRQHandler
-                0x00000000080026c0                SPI4_IRQHandler
-                0x00000000080026c0                TIM1_CC_IRQHandler
-                0x00000000080026c0                DMA2_Stream5_IRQHandler
-                0x00000000080026c0                DMA1_Stream5_IRQHandler
-                0x00000000080026c0                PVD_IRQHandler
-                0x00000000080026c0                SDIO_IRQHandler
-                0x00000000080026c0                TAMP_STAMP_IRQHandler
-                0x00000000080026c0                EXTI3_IRQHandler
-                0x00000000080026c0                TIM1_UP_TIM10_IRQHandler
-                0x00000000080026c0                I2C3_ER_IRQHandler
-                0x00000000080026c0                EXTI0_IRQHandler
-                0x00000000080026c0                I2C2_EV_IRQHandler
-                0x00000000080026c0                DMA1_Stream2_IRQHandler
-                0x00000000080026c0                FPU_IRQHandler
-                0x00000000080026c0                DMA2_Stream2_IRQHandler
-                0x00000000080026c0                SPI1_IRQHandler
-                0x00000000080026c0                TIM1_BRK_TIM9_IRQHandler
-                0x00000000080026c0                DMA2_Stream3_IRQHandler
-                0x00000000080026c0                USART6_IRQHandler
-                0x00000000080026c0                DMA2_Stream0_IRQHandler
-                0x00000000080026c0                TIM4_IRQHandler
-                0x00000000080026c0                I2C1_EV_IRQHandler
-                0x00000000080026c0                DMA1_Stream6_IRQHandler
-                0x00000000080026c0                DMA1_Stream1_IRQHandler
-                0x00000000080026c0                TIM3_IRQHandler
-                0x00000000080026c0                RCC_IRQHandler
-                0x00000000080026c0                Default_Handler
-                0x00000000080026c0                EXTI15_10_IRQHandler
-                0x00000000080026c0                ADC_IRQHandler
-                0x00000000080026c0                DMA1_Stream7_IRQHandler
-                0x00000000080026c0                SPI5_IRQHandler
-                0x00000000080026c0                TIM5_IRQHandler
-                0x00000000080026c0                DMA2_Stream7_IRQHandler
-                0x00000000080026c0                I2C3_EV_IRQHandler
-                0x00000000080026c0                EXTI9_5_IRQHandler
-                0x00000000080026c0                RTC_WKUP_IRQHandler
-                0x00000000080026c0                SPI2_IRQHandler
-                0x00000000080026c0                DMA1_Stream0_IRQHandler
-                0x00000000080026c0                EXTI4_IRQHandler
-                0x00000000080026c0                WWDG_IRQHandler
-                0x00000000080026c0                TIM2_IRQHandler
-                0x00000000080026c0                OTG_FS_WKUP_IRQHandler
-                0x00000000080026c0                TIM1_TRG_COM_TIM11_IRQHandler
-                0x00000000080026c0                EXTI1_IRQHandler
-                0x00000000080026c0                USART2_IRQHandler
-                0x00000000080026c0                I2C2_ER_IRQHandler
-                0x00000000080026c0                DMA2_Stream1_IRQHandler
-                0x00000000080026c0                FLASH_IRQHandler
-                0x00000000080026c0                DMA2_Stream4_IRQHandler
-                0x00000000080026c0                USART1_IRQHandler
-                0x00000000080026c0                OTG_FS_IRQHandler
-                0x00000000080026c0                SPI3_IRQHandler
-                0x00000000080026c0                DMA1_Stream4_IRQHandler
-                0x00000000080026c0                I2C1_ER_IRQHandler
-                0x00000000080026c0                DMA2_Stream6_IRQHandler
-                0x00000000080026c0                DMA1_Stream3_IRQHandler
+                0x0000000008002ac4        0x2 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
+                0x0000000008002ac4                RTC_Alarm_IRQHandler
+                0x0000000008002ac4                EXTI2_IRQHandler
+                0x0000000008002ac4                SPI4_IRQHandler
+                0x0000000008002ac4                TIM1_CC_IRQHandler
+                0x0000000008002ac4                DMA2_Stream5_IRQHandler
+                0x0000000008002ac4                DMA1_Stream5_IRQHandler
+                0x0000000008002ac4                PVD_IRQHandler
+                0x0000000008002ac4                SDIO_IRQHandler
+                0x0000000008002ac4                TAMP_STAMP_IRQHandler
+                0x0000000008002ac4                EXTI3_IRQHandler
+                0x0000000008002ac4                TIM1_UP_TIM10_IRQHandler
+                0x0000000008002ac4                I2C3_ER_IRQHandler
+                0x0000000008002ac4                EXTI0_IRQHandler
+                0x0000000008002ac4                I2C2_EV_IRQHandler
+                0x0000000008002ac4                DMA1_Stream2_IRQHandler
+                0x0000000008002ac4                FPU_IRQHandler
+                0x0000000008002ac4                DMA2_Stream2_IRQHandler
+                0x0000000008002ac4                SPI1_IRQHandler
+                0x0000000008002ac4                TIM1_BRK_TIM9_IRQHandler
+                0x0000000008002ac4                DMA2_Stream3_IRQHandler
+                0x0000000008002ac4                USART6_IRQHandler
+                0x0000000008002ac4                DMA2_Stream0_IRQHandler
+                0x0000000008002ac4                TIM4_IRQHandler
+                0x0000000008002ac4                I2C1_EV_IRQHandler
+                0x0000000008002ac4                DMA1_Stream6_IRQHandler
+                0x0000000008002ac4                DMA1_Stream1_IRQHandler
+                0x0000000008002ac4                TIM3_IRQHandler
+                0x0000000008002ac4                RCC_IRQHandler
+                0x0000000008002ac4                Default_Handler
+                0x0000000008002ac4                EXTI15_10_IRQHandler
+                0x0000000008002ac4                ADC_IRQHandler
+                0x0000000008002ac4                DMA1_Stream7_IRQHandler
+                0x0000000008002ac4                SPI5_IRQHandler
+                0x0000000008002ac4                TIM5_IRQHandler
+                0x0000000008002ac4                DMA2_Stream7_IRQHandler
+                0x0000000008002ac4                I2C3_EV_IRQHandler
+                0x0000000008002ac4                EXTI9_5_IRQHandler
+                0x0000000008002ac4                RTC_WKUP_IRQHandler
+                0x0000000008002ac4                SPI2_IRQHandler
+                0x0000000008002ac4                DMA1_Stream0_IRQHandler
+                0x0000000008002ac4                EXTI4_IRQHandler
+                0x0000000008002ac4                WWDG_IRQHandler
+                0x0000000008002ac4                TIM2_IRQHandler
+                0x0000000008002ac4                OTG_FS_WKUP_IRQHandler
+                0x0000000008002ac4                TIM1_TRG_COM_TIM11_IRQHandler
+                0x0000000008002ac4                EXTI1_IRQHandler
+                0x0000000008002ac4                USART2_IRQHandler
+                0x0000000008002ac4                I2C2_ER_IRQHandler
+                0x0000000008002ac4                DMA2_Stream1_IRQHandler
+                0x0000000008002ac4                FLASH_IRQHandler
+                0x0000000008002ac4                DMA2_Stream4_IRQHandler
+                0x0000000008002ac4                USART1_IRQHandler
+                0x0000000008002ac4                OTG_FS_IRQHandler
+                0x0000000008002ac4                SPI3_IRQHandler
+                0x0000000008002ac4                DMA1_Stream4_IRQHandler
+                0x0000000008002ac4                I2C1_ER_IRQHandler
+                0x0000000008002ac4                DMA2_Stream6_IRQHandler
+                0x0000000008002ac4                DMA1_Stream3_IRQHandler
  *(.glue_7)
- .glue_7        0x00000000080026c2        0x0 linker stubs
+ .glue_7        0x0000000008002ac6        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x00000000080026c2        0x0 linker stubs
+ .glue_7t       0x0000000008002ac6        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x00000000080026c2        0x2 
- .eh_frame      0x00000000080026c4        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
+ *fill*         0x0000000008002ac6        0x2 
+ .eh_frame      0x0000000008002ac8        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
  *(.init)
- .init          0x00000000080026c4        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crti.o
-                0x00000000080026c4                _init
- .init          0x00000000080026c8        0x8 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtn.o
+ .init          0x0000000008002ac8        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crti.o
+                0x0000000008002ac8                _init
+ .init          0x0000000008002acc        0x8 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtn.o
  *(.fini)
- .fini          0x00000000080026d0        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crti.o
-                0x00000000080026d0                _fini
- .fini          0x00000000080026d4        0x8 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtn.o
-                0x00000000080026dc                . = ALIGN (0x4)
-                0x00000000080026dc                _etext = .
+ .fini          0x0000000008002ad4        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crti.o
+                0x0000000008002ad4                _fini
+ .fini          0x0000000008002ad8        0x8 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtn.o
+                0x0000000008002ae0                . = ALIGN (0x4)
+                0x0000000008002ae0                _etext = .
 
-.vfp11_veneer   0x00000000080026dc        0x0
- .vfp11_veneer  0x00000000080026dc        0x0 linker stubs
+.vfp11_veneer   0x0000000008002ae0        0x0
+ .vfp11_veneer  0x0000000008002ae0        0x0 linker stubs
 
-.v4_bx          0x00000000080026dc        0x0
- .v4_bx         0x00000000080026dc        0x0 linker stubs
+.v4_bx          0x0000000008002ae0        0x0
+ .v4_bx         0x0000000008002ae0        0x0 linker stubs
 
-.iplt           0x00000000080026dc        0x0
- .iplt          0x00000000080026dc        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
+.iplt           0x0000000008002ae0        0x0
+ .iplt          0x0000000008002ae0        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
 
-.rodata         0x00000000080026dc       0x44
-                0x00000000080026dc                . = ALIGN (0x4)
+.rodata         0x0000000008002ae0       0xd0
+                0x0000000008002ae0                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x00000000080026dc       0x2c CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+ .rodata        0x0000000008002ae0       0x98 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+ .rodata        0x0000000008002b78       0x20 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
  *(.rodata*)
  .rodata.AHBPrescTable
-                0x0000000008002708       0x10 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
-                0x0000000008002708                AHBPrescTable
+                0x0000000008002b98       0x10 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
+                0x0000000008002b98                AHBPrescTable
  .rodata.APBPrescTable
-                0x0000000008002718        0x8 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
-                0x0000000008002718                APBPrescTable
-                0x0000000008002720                . = ALIGN (0x4)
+                0x0000000008002ba8        0x8 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
+                0x0000000008002ba8                APBPrescTable
+                0x0000000008002bb0                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0000000008002720        0x8
-                0x0000000008002720                __exidx_start = .
+.ARM            0x0000000008002bb0        0x8
+                0x0000000008002bb0                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0000000008002720        0x8 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
-                0x0000000008002728                __exidx_end = .
+ .ARM.exidx     0x0000000008002bb0        0x8 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
+                0x0000000008002bb8                __exidx_end = .
 
-.rel.dyn        0x0000000008002728        0x0
- .rel.iplt      0x0000000008002728        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
+.rel.dyn        0x0000000008002bb8        0x0
+ .rel.iplt      0x0000000008002bb8        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
 
-.preinit_array  0x0000000008002728        0x0
-                0x0000000008002728                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008002bb8        0x0
+                0x0000000008002bb8                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008002728                PROVIDE (__preinit_array_end = .)
+                0x0000000008002bb8                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000008002728        0x4
-                0x0000000008002728                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008002bb8        0x4
+                0x0000000008002bb8                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008002728        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
-                0x000000000800272c                PROVIDE (__init_array_end = .)
+ .init_array    0x0000000008002bb8        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
+                0x0000000008002bbc                PROVIDE (__init_array_end = .)
 
-.fini_array     0x000000000800272c        0x4
-                0x000000000800272c                PROVIDE (__fini_array_start = .)
+.fini_array     0x0000000008002bbc        0x4
+                0x0000000008002bbc                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x000000000800272c        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
-                0x0000000008002730                PROVIDE (__fini_array_end = .)
-                0x0000000008002730                _sidata = LOADADDR (.data)
+ .fini_array    0x0000000008002bbc        0x4 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
+                0x0000000008002bc0                PROVIDE (__fini_array_end = .)
+                0x0000000008002bc0                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0xa14 load address 0x0000000008002730
+.data           0x0000000020000000      0xa14 load address 0x0000000008002bc0
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -1425,17 +1443,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtn.o
                 0x0000000020000a14                _edata = .
 
 .tm_clone_table
-                0x0000000020000a14        0x0 load address 0x0000000008003144
+                0x0000000020000a14        0x0 load address 0x00000000080035d4
  .tm_clone_table
                 0x0000000020000a14        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
  .tm_clone_table
                 0x0000000020000a14        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtend.o
 
-.igot.plt       0x0000000020000a14        0x0 load address 0x0000000008003144
+.igot.plt       0x0000000020000a14        0x0 load address 0x00000000080035d4
  .igot.plt      0x0000000020000a14        0x0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtbegin.o
                 0x0000000020000a14                . = ALIGN (0x4)
 
-.bss            0x0000000020000a14       0xe0 load address 0x0000000008003144
+.bss            0x0000000020000a14       0xe0 load address 0x00000000080035d4
                 0x0000000020000a14                _sbss = .
                 0x0000000020000a14                __bss_start__ = _sbss
  *(.bss)
@@ -1456,7 +1474,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtn.o
                 0x0000000020000af4                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000af4      0x604 load address 0x0000000008003144
+                0x0000000020000af4      0x604 load address 0x00000000080035d4
                 0x0000000020000af8                . = ALIGN (0x8)
  *fill*         0x0000000020000af4        0x4 
                 0x0000000020000af8                PROVIDE (end = .)
@@ -1548,7 +1566,7 @@ OUTPUT(sh1106_ultimate.elf elf32-littlearm)
  .comment       0x00000000000000ae       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
  .comment       0x00000000000000ae       0x58 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/crtend.o
 
-.debug_info     0x0000000000000000     0xb79b
+.debug_info     0x0000000000000000     0xb902
  .debug_info    0x0000000000000000      0x8ce CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_info    0x00000000000008ce      0xd8d CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_info    0x000000000000165b      0x7d2 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
@@ -1557,20 +1575,20 @@ OUTPUT(sh1106_ultimate.elf elf32-littlearm)
  .debug_info    0x0000000000004aff     0x1627 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
  .debug_info    0x0000000000006126      0x503 CMakeFiles/sh1106_ultimate.elf.dir/Src/gpio.c.obj
  .debug_info    0x0000000000006629      0xa1d CMakeFiles/sh1106_ultimate.elf.dir/Src/i2c.c.obj
- .debug_info    0x0000000000007046      0xcbc CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
- .debug_info    0x0000000000007d02      0x939 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
- .debug_info    0x000000000000863b      0x9ce CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
- .debug_info    0x0000000000009009      0x381 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x000000000000938a      0x1ff CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_info    0x0000000000009589      0x573 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_info    0x0000000000009afc       0x22 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
- .debug_info    0x0000000000009b1e       0x26 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
- .debug_info    0x0000000000009b44      0xd0b /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
- .debug_info    0x000000000000a84f       0x26 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_dvmd_tls.o)
- .debug_info    0x000000000000a875      0x109 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
- .debug_info    0x000000000000a97e      0xe1d /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
+ .debug_info    0x0000000000007046      0xd50 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+ .debug_info    0x0000000000007d96      0xa0c CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+ .debug_info    0x00000000000087a2      0x9ce CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
+ .debug_info    0x0000000000009170      0x381 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x00000000000094f1      0x1ff CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_info    0x00000000000096f0      0x573 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_info    0x0000000000009c63       0x22 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
+ .debug_info    0x0000000000009c85       0x26 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x0000000000009cab      0xd0b /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x000000000000a9b6       0x26 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x000000000000a9dc      0x109 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
+ .debug_info    0x000000000000aae5      0xe1d /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
 
-.debug_abbrev   0x0000000000000000     0x1c99
+.debug_abbrev   0x0000000000000000     0x1d06
  .debug_abbrev  0x0000000000000000      0x1ef CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_abbrev  0x00000000000001ef      0x2f7 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_abbrev  0x00000000000004e6      0x1c6 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
@@ -1579,20 +1597,20 @@ OUTPUT(sh1106_ultimate.elf elf32-littlearm)
  .debug_abbrev  0x0000000000000b4e      0x23d CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
  .debug_abbrev  0x0000000000000d8b      0x131 CMakeFiles/sh1106_ultimate.elf.dir/Src/gpio.c.obj
  .debug_abbrev  0x0000000000000ebc      0x196 CMakeFiles/sh1106_ultimate.elf.dir/Src/i2c.c.obj
- .debug_abbrev  0x0000000000001052      0x1a5 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
- .debug_abbrev  0x00000000000011f7      0x1e6 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
- .debug_abbrev  0x00000000000013dd      0x196 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
- .debug_abbrev  0x0000000000001573      0x106 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x0000000000001679       0xc3 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x000000000000173c      0x128 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_abbrev  0x0000000000001864       0x12 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
- .debug_abbrev  0x0000000000001876       0x14 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
- .debug_abbrev  0x000000000000188a      0x199 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
- .debug_abbrev  0x0000000000001a23       0x14 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x0000000000001a37       0xba /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
- .debug_abbrev  0x0000000000001af1      0x1a8 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
+ .debug_abbrev  0x0000000000001052      0x1c2 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+ .debug_abbrev  0x0000000000001214      0x236 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+ .debug_abbrev  0x000000000000144a      0x196 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
+ .debug_abbrev  0x00000000000015e0      0x106 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x00000000000016e6       0xc3 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x00000000000017a9      0x128 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_abbrev  0x00000000000018d1       0x12 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
+ .debug_abbrev  0x00000000000018e3       0x14 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x00000000000018f7      0x199 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
+ .debug_abbrev  0x0000000000001a90       0x14 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x0000000000001aa4       0xba /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
+ .debug_abbrev  0x0000000000001b5e      0x1a8 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
 
-.debug_aranges  0x0000000000000000      0x9d8
+.debug_aranges  0x0000000000000000      0xa08
  .debug_aranges
                 0x0000000000000000       0xf0 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_aranges
@@ -1610,31 +1628,31 @@ OUTPUT(sh1106_ultimate.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000770       0x30 CMakeFiles/sh1106_ultimate.elf.dir/Src/i2c.c.obj
  .debug_aranges
-                0x00000000000007a0       0x30 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+                0x00000000000007a0       0x38 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
  .debug_aranges
-                0x00000000000007d0       0x68 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                0x00000000000007d8       0x90 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
  .debug_aranges
-                0x0000000000000838       0x30 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
+                0x0000000000000868       0x30 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
  .debug_aranges
-                0x0000000000000868       0x20 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+                0x0000000000000898       0x20 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
  .debug_aranges
-                0x0000000000000888       0x60 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+                0x00000000000008b8       0x60 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
  .debug_aranges
-                0x00000000000008e8       0x28 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
+                0x0000000000000918       0x28 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
  .debug_aranges
-                0x0000000000000910       0x28 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
+                0x0000000000000940       0x28 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
  .debug_aranges
-                0x0000000000000938       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
+                0x0000000000000968       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
  .debug_aranges
-                0x0000000000000958       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
+                0x0000000000000988       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
  .debug_aranges
-                0x0000000000000978       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_dvmd_tls.o)
+                0x00000000000009a8       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_dvmd_tls.o)
  .debug_aranges
-                0x0000000000000998       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
+                0x00000000000009c8       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
  .debug_aranges
-                0x00000000000009b8       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
+                0x00000000000009e8       0x20 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
 
-.debug_ranges   0x0000000000000000      0x950
+.debug_ranges   0x0000000000000000      0x980
  .debug_ranges  0x0000000000000000       0xe0 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_ranges  0x00000000000000e0      0x108 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_ranges  0x00000000000001e8       0x48 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
@@ -1643,16 +1661,16 @@ OUTPUT(sh1106_ultimate.elf elf32-littlearm)
  .debug_ranges  0x0000000000000550      0x1c0 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
  .debug_ranges  0x0000000000000710       0x10 CMakeFiles/sh1106_ultimate.elf.dir/Src/gpio.c.obj
  .debug_ranges  0x0000000000000720       0x20 CMakeFiles/sh1106_ultimate.elf.dir/Src/i2c.c.obj
- .debug_ranges  0x0000000000000740       0x20 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
- .debug_ranges  0x0000000000000760       0x58 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
- .debug_ranges  0x00000000000007b8       0x20 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
- .debug_ranges  0x00000000000007d8       0x10 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_ranges  0x00000000000007e8       0x50 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_ranges  0x0000000000000838       0x18 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_ranges  0x0000000000000850       0x20 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
- .debug_ranges  0x0000000000000870       0xe0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
+ .debug_ranges  0x0000000000000740       0x28 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+ .debug_ranges  0x0000000000000768       0x80 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+ .debug_ranges  0x00000000000007e8       0x20 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
+ .debug_ranges  0x0000000000000808       0x10 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_ranges  0x0000000000000818       0x50 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_ranges  0x0000000000000868       0x18 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_ranges  0x0000000000000880       0x20 CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
+ .debug_ranges  0x00000000000008a0       0xe0 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
 
-.debug_line     0x0000000000000000     0x513b
+.debug_line     0x0000000000000000     0x5256
  .debug_line    0x0000000000000000      0x443 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_line    0x0000000000000443      0x579 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_line    0x00000000000009bc      0x3fe CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
@@ -1661,20 +1679,20 @@ OUTPUT(sh1106_ultimate.elf elf32-littlearm)
  .debug_line    0x0000000000002949      0xc24 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
  .debug_line    0x000000000000356d      0x239 CMakeFiles/sh1106_ultimate.elf.dir/Src/gpio.c.obj
  .debug_line    0x00000000000037a6      0x2d3 CMakeFiles/sh1106_ultimate.elf.dir/Src/i2c.c.obj
- .debug_line    0x0000000000003a79      0x32b CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
- .debug_line    0x0000000000003da4      0x3bc CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
- .debug_line    0x0000000000004160      0x2ce CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
- .debug_line    0x000000000000442e      0x209 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x0000000000004637      0x28a CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_line    0x00000000000048c1      0x22d CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_line    0x0000000000004aee       0xac CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
- .debug_line    0x0000000000004b9a       0x5d /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
- .debug_line    0x0000000000004bf7      0x24c /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
- .debug_line    0x0000000000004e43       0x5d /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000000000004ea0       0xb9 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
- .debug_line    0x0000000000004f59      0x1e2 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
+ .debug_line    0x0000000000003a79      0x38c CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+ .debug_line    0x0000000000003e05      0x476 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+ .debug_line    0x000000000000427b      0x2ce CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
+ .debug_line    0x0000000000004549      0x209 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x0000000000004752      0x28a CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_line    0x00000000000049dc      0x22d CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_line    0x0000000000004c09       0xac CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
+ .debug_line    0x0000000000004cb5       0x5d /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0000000000004d12      0x24c /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0000000000004f5e       0x5d /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000000000004fbb       0xb9 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
+ .debug_line    0x0000000000005074      0x1e2 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
 
-.debug_str      0x0000000000000000     0x49c0
+.debug_str      0x0000000000000000     0x4a36
  .debug_str     0x0000000000000000      0x9f5 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
                                         0xa5e (size before relaxing)
  .debug_str     0x00000000000009f5      0x51a CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
@@ -1691,31 +1709,31 @@ OUTPUT(sh1106_ultimate.elf elf32-littlearm)
                                         0x479 (size before relaxing)
  .debug_str     0x00000000000028ce       0x57 CMakeFiles/sh1106_ultimate.elf.dir/Src/i2c.c.obj
                                         0x993 (size before relaxing)
- .debug_str     0x0000000000002925       0x70 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
-                                        0xc10 (size before relaxing)
- .debug_str     0x0000000000002995      0x18a CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
-                                        0x92e (size before relaxing)
- .debug_str     0x0000000000002b1f       0x51 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
+ .debug_str     0x0000000000002925       0x96 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+                                        0xc3c (size before relaxing)
+ .debug_str     0x00000000000029bb      0x1da CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+                                        0x985 (size before relaxing)
+ .debug_str     0x0000000000002b95       0x51 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
                                         0x8d7 (size before relaxing)
- .debug_str     0x0000000000002b70       0x48 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x0000000000002be6       0x48 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
                                         0x3e8 (size before relaxing)
- .debug_str     0x0000000000002bb8       0xd3 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_str     0x0000000000002c2e       0xd3 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
                                         0x352 (size before relaxing)
- .debug_str     0x0000000000002c8b       0x72 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_str     0x0000000000002d01       0x72 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
                                         0x464 (size before relaxing)
- .debug_str     0x0000000000002cfd       0x5a CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
+ .debug_str     0x0000000000002d73       0x5a CMakeFiles/sh1106_ultimate.elf.dir/startup/startup_stm32f411xe.s.obj
                                          0x9c (size before relaxing)
- .debug_str     0x0000000000002d57       0x9a /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
- .debug_str     0x0000000000002df1     0x1320 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
+ .debug_str     0x0000000000002dcd       0x9a /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x0000000000002e67     0x1320 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
                                        0x1411 (size before relaxing)
- .debug_str     0x0000000000004111       0x2d /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x0000000000004187       0x2d /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_dvmd_tls.o)
                                          0x9e (size before relaxing)
- .debug_str     0x000000000000413e      0x188 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
+ .debug_str     0x00000000000041b4      0x188 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
                                         0x223 (size before relaxing)
- .debug_str     0x00000000000042c6      0x6fa /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
+ .debug_str     0x000000000000433c      0x6fa /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
                                         0x909 (size before relaxing)
 
-.debug_frame    0x0000000000000000     0x250c
+.debug_frame    0x0000000000000000     0x25e8
  .debug_frame   0x0000000000000000      0x374 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
  .debug_frame   0x0000000000000374      0x498 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
  .debug_frame   0x000000000000080c      0x14c CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
@@ -1724,16 +1742,16 @@ OUTPUT(sh1106_ultimate.elf elf32-littlearm)
  .debug_frame   0x0000000000001780      0x824 CMakeFiles/sh1106_ultimate.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
  .debug_frame   0x0000000000001fa4       0x34 CMakeFiles/sh1106_ultimate.elf.dir/Src/gpio.c.obj
  .debug_frame   0x0000000000001fd8       0x74 CMakeFiles/sh1106_ultimate.elf.dir/Src/i2c.c.obj
- .debug_frame   0x000000000000204c       0x70 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
- .debug_frame   0x00000000000020bc      0x17c CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
- .debug_frame   0x0000000000002238       0x74 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
- .debug_frame   0x00000000000022ac       0x38 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
- .debug_frame   0x00000000000022e4      0x10c CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
- .debug_frame   0x00000000000023f0       0x58 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
- .debug_frame   0x0000000000002448       0x2c /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x0000000000002474       0x34 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00000000000024a8       0x2c /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
- .debug_frame   0x00000000000024d4       0x38 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x000000000000204c       0x98 CMakeFiles/sh1106_ultimate.elf.dir/Src/main.c.obj
+ .debug_frame   0x00000000000020e4      0x230 CMakeFiles/sh1106_ultimate.elf.dir/Src/sh1106Ultimate.c.obj
+ .debug_frame   0x0000000000002314       0x74 CMakeFiles/sh1106_ultimate.elf.dir/Src/spi.c.obj
+ .debug_frame   0x0000000000002388       0x38 CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_hal_msp.c.obj
+ .debug_frame   0x00000000000023c0      0x10c CMakeFiles/sh1106_ultimate.elf.dir/Src/stm32f4xx_it.c.obj
+ .debug_frame   0x00000000000024cc       0x58 CMakeFiles/sh1106_ultimate.elf.dir/Src/system_stm32f4xx.c.obj
+ .debug_frame   0x0000000000002524       0x2c /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x0000000000002550       0x34 /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000000000002584       0x2c /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00000000000025b0       0x38 /usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/libg_nano.a(lib_a-memset.o)
 
 .debug_loc      0x0000000000000000     0x1062
  .debug_loc     0x0000000000000000      0xe4b /usr/lib/gcc/arm-none-eabi/7.3.1/thumb/v7e-m/libgcc.a(_udivmoddi4.o)

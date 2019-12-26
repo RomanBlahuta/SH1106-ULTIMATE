@@ -96,6 +96,12 @@ void shu_WriteData(uint16_t data);
 /** Function for setting the current coordinates on the display **/
 void shu_GotoXY(uint16_t x, uint16_t y);
 
+/** Function for getting the X coordinate of the cursor **/
+uint16_t shu_GetX();
+
+/** Function for getting the Y coordinate of the cursor **/
+uint16_t shu_GetY();
+
 //TODO
 /** Function for setting a pixel either to 0(Black) or 1(White) **/
 void shu_DrawPixel(Colour colour);
@@ -123,6 +129,8 @@ void shu_DrawBitmap(uint16_t* bitmap);
 
 //TODO: add Geometric Funcs?
 
+/** DEMO **/
+void shu_DrawHeart(void);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///                                                                                                                  ///

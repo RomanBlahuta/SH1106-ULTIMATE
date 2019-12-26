@@ -12,10 +12,13 @@ __void shu_InitDisplay(void)__ | Initializes the display by sending the necessar
 __void shu_WriteCommand(uint16_t command)__ | Sends commands in hex to the display through I2C. _Util function_.
 __void shu_WriteData(uint16_t data)__ | Sends data in hex to the display through I2C. _Util function_.
 __void shu_GotoXY(uint16_t x, uint16_t y)__ | Sets the cursor to given display coordinates.
+__uint16_t shu_GetX();__ | Returns the current X coordinate of the cursor.
+__uint16_t shu_GetY();__ | Returns the current Y coordinate of the cursor.
 __void shu_ClearDisplay(void)__ | Sets all pixels on the display to Black.
 __void shu_ChooseFont(FontChoice choice)__ | Sets the current font to given __FontChoice__.
 __void shu_DrawChar(char chr)__ | Draws the character on the display on current coordinates.
 __void shu_DrawString(char *string)__ | Draws a string of multiple characters on the display on current coordinates.
+__void shu_DrawHeart(void)__ | Draws a 16x16 heart on the display. _Demo function_.
 
 
 
