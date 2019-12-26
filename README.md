@@ -36,25 +36,27 @@ fonts.h | Bitmaps for fonts of different sizes
 
 ## Examples
 
-### In the "examples/" directory you can find a project which uses some of the functions as an example. To see the pinout and wiring scheme go to __HARDWARE.pdf__ or see the comments in the __sh1106Ultimate.c__ or open the given example in STM32CubeMX.
+In the "examples/" directory you can find a project which uses some of the functions as an example. To see the pinout and wiring scheme go to __HARDWARE.pdf__ or see the comments in the __sh1106Ultimate.c__ or open the given example in STM32CubeMX.
 
 ---
 ---
 
 ## Issues and future plans
 
-* ### Current Library is still being developed. There are possibly many bugs!!!!!!!
-* ### Add functions for drawing geometric figures on the display;
-* ### Add support for SSD1306;
-* ### Currently there is only 5x7 font available;
-* ### Add support for displays with different resolution;
-* ### Add ability to configure the size of display;
-* ### Library optimization;
+* Current Library is still being developed. There are possibly many bugs!!!!!!!
+* Add functions for drawing geometric figures on the display;
+* Add support for SSD1306;
+* Currently there is only 5x7 font available;
+* Add support for displays with different resolution;
+* Add ability to configure the size of display;
+* Library optimization;
+* Implement functions for drawing geometric shapes;
+* Implement util checks for more reliable work process;
 
 ## Bugs
-* ### __shu_DrawChar__ works only with 5x7 font. Cause: magic number in implementation. Usage of variables creates distortion on the display.
-* ### Writing on same coordinates overrides characters.
-* ### Structure attributes behaved unpredictably when there was an attempt to perform a check if display.isInitialized == 1;
+* __shu_DrawChar__ works only with 5x7 font. Cause: magic number in implementation. Usage of variables creates distortion on the display.
+* Writing on same coordinates overrides characters.
+* Structure attributes behaved unpredictably when there was an attempt to perform a check if display.isInitialized == 1;
 
 ---
 ---
