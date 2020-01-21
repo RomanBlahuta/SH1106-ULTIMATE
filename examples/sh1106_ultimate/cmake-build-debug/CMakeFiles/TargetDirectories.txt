@@ -1,3 +1,0 @@
-/home/romanblahuta/OLED_PROJECT/sh1106_ultimate/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/romanblahuta/OLED_PROJECT/sh1106_ultimate/cmake-build-debug/CMakeFiles/sh1106_ultimate.elf.dir
-/home/romanblahuta/OLED_PROJECT/sh1106_ultimate/cmake-build-debug/CMakeFiles/edit_cache.dir

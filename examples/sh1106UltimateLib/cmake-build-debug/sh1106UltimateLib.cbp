@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="sh1106UltimateLib"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sh1106UltimateLib.elf">
+				<Option output="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/sh1106UltimateLib.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__weak=__attribute__((weak))"/>
+					<Add option="-D__packed=__attribute__((__packed__))"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F411xE"/>
+					<Add directory="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Inc"/>
+					<Add directory="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/include/c++/7.3.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/include/c++/7.3.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/include/c++/7.3.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 sh1106UltimateLib.elf"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sh1106UltimateLib.elf/fast">
+				<Option output="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/sh1106UltimateLib.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__weak=__attribute__((weak))"/>
+					<Add option="-D__packed=__attribute__((__packed__))"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F411xE"/>
+					<Add directory="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Inc"/>
+					<Add directory="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/include/c++/7.3.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/include/c++/7.3.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/include/c++/7.3.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/7.3.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 sh1106UltimateLib.elf/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Inc/fonts.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Inc/sh1106Ultimate.h">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/STM32F411VETx_FLASH.ld">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Src/gpio.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Src/i2c.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Src/main.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Src/sh1106Ultimate.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Src/stm32f4xx_hal_msp.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Src/stm32f4xx_it.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Src/sys.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Src/syscalls.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/Src/system_stm32f4xx.c">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/startup/startup_stm32f411xe.s">
+			<Option target="sh1106UltimateLib.elf"/>
+		</Unit>
+		<Unit filename="/home/romanblahuta/UCU/Programming/PCO/sh1106UltimateLib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

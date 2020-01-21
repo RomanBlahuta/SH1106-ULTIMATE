@@ -5,10 +5,6 @@ The current version of the library supports only displays with __128x64__ resolu
 
 The communication between the display and __STM32F411E-DISCOVERY__ is implemented through the __I2C__ bus (__I2C3__ on the __STM__ kit by default).
 
-### \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
-### __UNDER DEVELOPMENT__
-### \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
-
 ---
 ---
 
@@ -43,20 +39,14 @@ In the "examples/" directory you can find a project which uses some of the funct
 
 ## Issues and future plans
 
-* Current Library is still being developed. There are possibly many bugs!!!!!!!
-* Add functions for drawing geometric figures on the display;
-* Add support for SSD1306;
-* Currently there is only 5x7 font available;
+* Add support for SSD1306 and multiple displays at the same time;
 * Add support for displays with different resolution;
 * Add ability to configure the size of display;
 * Library optimization;
-* Implement functions for drawing geometric shapes;
 * Implement util checks for more reliable work process;
 
 ## Bugs
-* __shu_DrawChar__ works only with 5x7 font. Cause: magic number in implementation. Usage of variables creates distortion on the display.
-* Writing on same coordinates overrides characters.
-* Structure attributes behaved unpredictably when there was an attempt to perform a check if display.isInitialized == 1;
-
+* shu_DrawLines does not work properly with diagonal lines, especially ascending ones;
+* When choosing BLACK colour when drawing a char or a string, the letters above or below will be partially erased. This is due to bit shifting when writing on __y__ coords that are not divisible by 8;
 ---
 ---

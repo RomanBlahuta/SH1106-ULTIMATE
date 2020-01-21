@@ -1,8 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration name="OCD sh1106_ultimate" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" PASS_PARENT_ENVS_2="true" PROJECT_NAME="sh1106_ultimate" TARGET_NAME="sh1106_ultimate.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="sh1106_ultimate" RUN_TARGET_NAME="sh1106_ultimate.elf">
-    <openocd gdb-port="3333" telnet-port="4444" board-config="board/stm32f4discovery.cfg" reset-type="INIT" download-type="ALWAYS" />
-    <method v="2">
-      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-    </method>
-  </configuration>
-</component>
